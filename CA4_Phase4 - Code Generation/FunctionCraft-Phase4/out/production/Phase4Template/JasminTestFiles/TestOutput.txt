@@ -1,0 +1,16 @@
+Standard Output:
+Standard Error:
+Main.j:74: Warning - Syntax error.
+		i
+		 ^
+Main.j:76: Warning - Syntax error.
+
+^
+Main.j:113: JAS Error: Missing arguments for instruction if_icmpeq.
+		i
+		 ^
+Main.j: Found 3 errors
+Standard Output:
+Standard Error:
+Error: Could not find or load main class Main
+Caused by: java.lang.NoClassDefFoundError: Main (wrong name: JasminTestFiles/Main)

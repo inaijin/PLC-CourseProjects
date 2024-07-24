@@ -1,0 +1,45 @@
+=begin
+stringType **
+IntType
+FuncPtrType **
+ListType **
+BoolType
+=end
+
+# Syntax: len(TYPES) -> gives the length of strings and lists.
+
+def func(a)
+    puts("Getting The Length");
+    return len(a);
+end
+
+def func2(a)
+    puts("Getting The Length");
+    return len(a);
+end
+
+def main()
+    #Assign Test
+    a = len("kourosh");
+    puts(a);
+
+    #String
+    aa = "kourosh";
+    puts(len("kourosh"));
+    puts(len(aa));
+
+    #List
+    list = ["OWO", "UwUwU"];
+    puts(len(list));
+    puts(len(list[0]));
+    puts(len(list[1]));
+    puts(len([1,2,3,4]));
+
+    #Function
+    puts(func2("testu"));
+    puts(func([1, 2, 3, 4]));
+    e = func2("Loo");
+    puts(e);
+end
+
+#Len Test

@@ -1,0 +1,20 @@
+def isPalindrome(list)
+    left = 0;
+    right = len(list) - 1;
+    loop do
+        if(left > right)
+            break;
+        end
+        if (list[left] != list[right])
+            return false;
+        end
+        ++left;
+        --right;
+    end
+    return true;
+end
+
+def main()
+    puts(isPalindrome([1, 2, 2, 1]));
+    puts(isPalindrome([1, 2, 3, 4]));
+end

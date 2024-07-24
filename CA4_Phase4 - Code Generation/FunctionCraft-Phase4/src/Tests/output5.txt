@@ -1,0 +1,32 @@
+---------------------------Compilation Successful---------------------------
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+outside the loop
+110
+Should Print
+nice
+negative
+-1-
+zero Build
+000
+a is 1
+111
+a is 2
+222
+a > 2
+888
+a > 2
+888
+finish
+1
+2
+3
+9

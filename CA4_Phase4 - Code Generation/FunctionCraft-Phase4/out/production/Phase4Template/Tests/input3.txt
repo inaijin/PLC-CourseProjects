@@ -1,0 +1,41 @@
+=begin
+stringType **
+IntType
+FuncPtrType **
+ListType **
+BoolType
+=end
+
+# Syntax: chop(TYPES) -> removes the last char in string then returns it.
+
+def func(a)
+    puts("Begin Chopped");
+    return chop(a);
+end
+
+def main()
+    #Assign Test
+    a = chop("kouroshu");
+    puts(a);
+
+    #String
+    aa = "kouroshu";
+    puts(chop("kouroshu"));
+    puts(chop(aa));
+
+    #List
+    list = ["OWOo", "UwUu"];
+    c = list[1];
+    puts(chop(list[0]));
+    puts(chop(c));
+
+    #Function
+    d = func("testu");
+    puts(d);
+    e = func("Loo");
+    puts(chop(e));
+    puts(func(chop("Meow")));
+    puts(chop(func("Why")));
+end
+
+#Chop Test

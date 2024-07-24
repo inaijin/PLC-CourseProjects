@@ -1,0 +1,104 @@
+=begin
+stringType **
+IntType **
+FuncPtrType **
+ListType **
+BoolType **
+=end
+
+# Syntax: loop do STATEMENTS end -> loops until it breaks.
+
+def func(a)
+    loop do
+        if(a == 0)
+            puts("zero Build");
+            return "000";
+        end
+        if(a == 1)
+            puts("a is 1");
+            return "111";
+        end
+        if(a == 2)
+            puts("a is 2");
+            return "222";
+        end
+        if(a > 2)
+            puts("a > 2");
+            return "888";
+        end
+        if(a < 0)
+            break;
+        end
+    end
+    puts("negative");
+    return "-1-";
+end
+
+def main()
+    i = 0;
+    loop do
+        puts(i + 1);
+        ++i;
+        if(i < 10)
+            next;
+        end
+        break;
+    end
+    puts("outside the loop");
+
+    i = 0;
+    loop do
+        j = 0;
+        loop do
+            if(j > 10)
+                break;
+            end
+            i = i + j;
+            ++j;
+        end
+        if(i > 100)
+            break;
+        end
+    end
+    puts(i);
+
+    i = 2;
+    loop do
+        if (i == 1)
+            puts("Shouldn't Print");
+            break;
+        end
+        if (i == 2)
+            puts("Should Print");
+            break;
+        end
+    end
+    puts("nice");
+
+    i = -1;
+    loop do
+        puts(func(i));
+        if(i > 3)
+            break;
+        end
+        ++i;
+    end
+    puts("finish");
+
+    list = [1,2,3,4,5];
+    i = 0;
+    loop do
+        list[4] = list[4] + 1;
+        if(i > 4)
+            break;
+        end
+        if(list[i] == 4)
+            break;
+        end
+        puts(list[i]);
+        ++i;
+    end
+    puts(list[4]);
+end
+
+#Loop Do Test

@@ -1,0 +1,35 @@
+def default(a, b, [d = 88, c = 66])
+    puts(a);
+    puts(b);
+    puts(d);
+    puts(c);
+    return;
+end
+
+def bool(a, [b = false])
+    if(a)
+        return a;
+    else
+        return !b;
+    end
+    return false;
+end
+
+def main()
+    #Default Func / Method FuncPointer
+    a = method(:default);
+    a(1,2);
+    default(1, 2, 3);
+    puts(default(1, 2, 3, 4));
+
+    list = [11, 22, 33];
+    puts(default(list[0], list[1], list[2]));
+    puts(a(list[0], list[1]));
+
+    puts(bool(true));
+    abc = false;
+    puts(bool(false, true));
+    puts(!bool(abc, true));
+end
+
+#Method/Default Test

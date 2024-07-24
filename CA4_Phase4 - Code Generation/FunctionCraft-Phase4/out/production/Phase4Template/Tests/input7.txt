@@ -1,0 +1,85 @@
+=begin
+stringType
+IntType **
+FuncPtrType **
+ListType **
+BoolType
+=end
+
+# Syntax: EQUAL NOT_EQUAL GREATER_THAN LESS_THAN LESS_EQUAL_THAN GREATER_EQUAL_THAN PLUS MINUS MULTIPLY DIVIDE
+
+def func(a, b, condition)
+    if(condition == 0)
+        return a + b;
+    end
+    if(condition == 1)
+        return a - b;
+    end
+    if(condition == 2)
+        return a * b;
+    end
+    if(condition == 3)
+        return a / b;
+    end
+    return 0;
+end
+
+def main()
+    #Assign Test
+    aa = 5 == 3;
+    puts(aa);
+    aa = 5 > 3;
+    puts(aa);
+    aa = 5 < 3;
+    puts(aa);
+    aa = 5 != 3;
+    puts(aa);
+    aa = 5 >= 3;
+    puts(aa);
+    aa = 5 <= 3;
+    puts(aa);
+    aa = 5 + 3;
+    puts(aa);
+    aa = 5 - 3;
+    puts(aa);
+    aa = 5 * 3;
+    puts(aa);
+    aa = 10 / 5;
+    puts(aa);
+
+    #Int
+    a = 1;
+    b = 2;
+    puts(1 + 2);
+    puts(a + b);
+    puts(1 - 2);
+    puts(a - b);
+    puts(1 * 2);
+    puts(a * b);
+    puts(1 / 2);
+    puts(a / b);
+    puts(1 > 2);
+    puts(a > 2);
+
+    #List
+    list = [1,2,3,4,5];
+    puts(list[0] + list[1]);
+    puts(list[1] * list[4]);
+    list[2] = list[3] / list[1];
+    puts(list[2]);
+
+    #Function
+    i = 0;
+    loop do
+        if(i > 3)
+            break;
+        end
+        a = func(3, 5, i);
+        puts(a);
+        puts(func(3, 5, i));
+        ++i;
+    end
+    puts(func(3, 2, 2) + func(3, 2, 0));
+end
+
+#Binary Test

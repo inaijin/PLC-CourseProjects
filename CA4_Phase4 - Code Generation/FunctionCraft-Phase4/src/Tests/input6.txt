@@ -1,0 +1,97 @@
+=begin
+stringType
+IntType **
+FuncPtrType **
+ListType **
+BoolType **
+=end
+
+# Syntax: NOT - MINUS - INC - DEC
+
+def func(a)
+    if(a == 1)
+        aa = -8;
+        return -aa;
+    end
+    if(a == 2)
+        aa = 9;
+        ++aa;
+        return aa;
+    end
+    if(a == 3)
+        aa = 12;
+        --aa;
+        return aa;
+    end
+    return 0;
+end
+
+def func2(a)
+    if(a == 0)
+        bool = true;
+        return !bool;
+    end
+    return true;
+end
+
+def func3()
+    return false;
+end
+
+def func4(a)
+    return a;
+end
+
+def main()
+    #Assign Test
+    a = !true;
+    puts(a);
+    aa = -2;
+    puts(aa);
+    ++aa;
+    puts(aa);
+    --aa;
+    puts(aa);
+
+    #Int
+    aa = -7;
+    puts(aa);
+    puts(-aa);
+
+    #Bool
+    a = false;
+    puts(!a);
+    puts(!false);
+
+    #List
+    list = [false, true, false];
+    puts(!list[1]);
+    list[2] = true;
+    puts(list[2]);
+
+    list2 = [1, 2, 3, 4];
+    puts(-list2[0]);
+    ++list2[1];
+    puts(list2[1]);
+    --list2[1];
+    puts(list2[1]);
+
+    #Function
+    i = 0;
+    loop do
+        if(i == 4)
+            break;
+        end
+        if(i == 0)
+            puts(func2(i));
+        else
+            puts(func(i));
+        end
+        ++i;
+    end
+
+    puts(!func3());
+    puts(-func4(5));
+end
+
+#Unary Test

@@ -1,0 +1,50 @@
+def factorial(n)
+  if (n == 0)
+    return 1;
+  else
+    return n * factorial(n - 1);
+  end
+end
+
+def fibonacci(n)
+  if (n <= 1)
+    return n;
+  else
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  end
+end
+
+def sum_list(lst)
+  sum = 0;
+  for i in lst
+    sum += i;
+  end
+  return sum;
+end
+
+def main()
+  lambda_double = -> (x) { return x * 2; };
+  lambda_triple = -> (x) { return x * 3; };
+
+  puts("Factorial of 5:");
+  puts(factorial(5));
+
+  puts("Fibonacci sequence up to 10:");
+  for i in (0..10)
+    puts(fibonacci(i));
+  end
+
+  list = [1, 2, 3, 4, 5];
+  puts("Sum of list:");
+  puts(sum_list(list));
+
+  puts("Applying lambdas to 4:");
+  puts(lambda_double(4));
+  puts(lambda_triple(4));
+
+  puts("Counting down from 5:");
+  loop do
+    puts(5);
+    break;
+  end
+end
